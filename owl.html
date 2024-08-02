@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BACO VIỆT NAM</title>
+    <style>
+        /* CSS để tăng kích thước ảnh có lớp active9 */
+        .active9 img {
+  transform: scale(1.5); /* Điều chỉnh tỷ lệ phóng to */
+  z-index: 1; /* Đảm bảo ảnh phóng to nằm trên cùng */
+  transition: transform 0.5s ease, z-index 0s; /* Tăng độ mượt mà cho hiệu ứng */
+}
+
+.slide3 .item img {
+  transition: transform 0.5s ease;
+}
+
+.slide3 .owl-item img {
+  transition: transform 0.5s ease;
+}
+
+/* Đảm bảo các ảnh không có lớp active9 có kích thước bình thường */
+.slide3 .item img {
+  transition: transform 0.5s ease;
+}
+    </style>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css" />
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <script>
+           $(document).ready(function () {
+  $(".slide3").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 1500,
+    autoplayHoverPause: true,
+    center: true,
+    navigation: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+    onInitialized: function(event) {
+      adjustActiveItem(event);
+    },
+    onTranslate: function(event) {
+      adjustActiveItem(event);
+    }
+  });
+
+  function adjustActiveItem(event) {
+    $('.slide3 .owl-item').removeClass('active9'); // Xóa lớp active9 khỏi tất cả các ảnh
+    var currentIndex = event.item.index;
+    var items = $('.slide3 .owl-item');
+    if (items.length > 2) {
+      var activeItemIndex = (currentIndex + Math.floor(event.page.size / 2)) % items.length;
+      $(items[activeItemIndex]).addClass('active9'); // Thêm lớp active9 cho ảnh hiện tại
+    }
+  }
+});
+        </script>
+
+<div class="container-slide3">
+    <div class="slide3 owl-carousel">
+      <div class="item">
+        <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+      </div>
+      <div class="item">
+        <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+      </div>
+      <div class="item">
+        <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+      </div>
+      <div class="item">
+        <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+      </div>
+    </div>
+  </div>
+    </div>
+</body>
+
+</html>

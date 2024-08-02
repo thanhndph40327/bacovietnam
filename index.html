@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BACO VIỆT NAM</title>
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css" />
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+</head>
+
+<body>
+  <header class="hearder">
+    <div class="container">
+      <div class="header-block">
+        <div class="logo">
+          <img src="./image/logo.webp" alt="" class="logo_img" />
+          <h1>BACO VIETNAM</h1>
+        </div>
+        <div class="header-input">
+          <input type="text" placeholder="Search..." />
+          <i class="bi bi-search"></i>
+        </div>
+        <div class="header-right">
+          <div class="header-right_stard">
+            <i class="bi bi-phone"></i>
+            <span>+84 981 356252</span>
+          </div>
+          <div class="header-right_center">
+            <i class="bi bi-bag cart"></i>
+            <span class=""> Cart </span>
+            <span class="quantyti">0</span>
+          </div>
+          <div class="header-right_end">
+            <i class="bi bi-person"></i>
+            <span> Account </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="container">
+        <div class="nav-box">
+          <ul class="menu">
+            <li class="menuList">
+              <a href="#" class="menuList-link">HOME</a>
+            </li>
+            <li class="menuList">
+              <a href="#" class="menuList-link">ABOUT US</a>
+            </li>
+            <li class="menuList">
+              <a href="#" class="menuList-link">PRODUCTS</a>
+              <ul class="menu-sup">
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menuList">
+              <a href="#" class="menuList-link">NEWS & EVENTS</a>
+              <ul class="menu-sup">
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+                <li class="menuList-sup">
+                  <a href="#" class="menuList-sup-link">test</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menuList">
+              <a href="#" class="menuList-link">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="nav-end">
+            <button class="en">EN</button>
+            <span>|</span>
+            <button class="cn">CN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="slide-show">
+    <div class="demo">
+      <img src="/image/banner1.jpg" class="slide-img" width="1539px" height="560px" data-idx="0" />
+      <img src="/image/banner2.jpg" class="slide-img" width="1539px" height="560px" data-idx="1" />
+      <img src="/image/banner3.jpg" class="slide-img" width="1539px" height="560px" data-idx="2" />
+      <img src="/image/banner4.jpg" class="slide-img" width="1539px" height="560px" data-idx="3" />
+    </div>
+  </div>
+
+  <div class="button_slide">
+    <button class="right" id="prev"><i class="bi bi-arrow-right"></i></button>
+    <button class="right" id="next"><i class="bi bi-arrow-left"></i></button>
+  </div>
+
+  <div class="content1">
+    <div class="contentnho">
+      <h2>ABOUT BACO VIET NAM</h2>
+      <br />
+      <p>
+        BACO Vietnam Co., Ltd is one of the most reputed manufacturers and
+        exporters of high quality spices, food and agricultural products
+        originated from Vietnam. We have modern and spacious warehouseand
+        factory for processing which ensures the safe storage of products with
+        big quantity so we can meet a varieties of product requirements. Our
+        products are praised for quality both items flavor andappearance by
+        our clients.
+      </p>
+      <br />
+      <button class="view">
+        View More <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".container-slide").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplaySpeed: 1500,
+        autoplayHoverPause: true,
+        center: true,
+        navigation: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    });
+  </script>
+
+  <div class="container" bis_skin_checked="1">
+    <div class="container-slide" bis_skin_checked="1">
+      <div class="container" bis_skin_checked="1">
+        <div class="slide-about owl-carousel owl-theme owl-loaded" bis_skin_checked="1">
+          <div class="owl-stage-outer" bis_skin_checked="1">
+            <div class="owl-stage" style="
+                  transition: all 1s ease 0s;
+                  width: 4555px;
+                  transform: translate3d(-911px, 0px, 0px);
+                " bis_skin_checked="1">
+              <div class="owl-item cloned" style="width: 319px; margin-right: 136.5px" bis_skin_checked="1">
+                <div class="item" bis_skin_checked="1">
+                  <!-- <a href="/mission-vision-staff" title="Vision" class="img" bis_skin_checked="1"> -->
+                  <img src="image/vision.jpg" alt="Vision" />
+                  <div class="text" bis_skin_checked="1">
+                    <h3>
+                      <a href="/mission-vision-staff" title="Vision" bis_skin_checked="1">Vision</a>
+                    </h3>
+                    <div class="paragraph" bis_skin_checked="1">
+                      <p>
+                        Become the first choice for all Buyers of Spices, Food
+                        and Agricultural products form Vietnam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="owl-item cloned" style="width: 319px; margin-right: 136.5px" bis_skin_checked="1">
+                <div class="item" bis_skin_checked="1">
+                  <!-- <a href="/mission-vision-staff" title="Staff" class="img" bis_skin_checked="1"> -->
+                  <img src="image/staff.jpg" alt="Staff" />
+                  <div class="text" bis_skin_checked="1">
+                    <h3>
+                      <a href="/mission-vision-staff" title="Staff" bis_skin_checked="1">Staff</a>
+                    </h3>
+                    <div class="paragraph" bis_skin_checked="1">
+                      <p>
+                        Extensive expertise, skilled experienced Professional
+                        manaement
+                      </p>
+
+                      <p>Client satisfaction service</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="owl-item active" style="width: 319px; margin-right: 136.5px" bis_skin_checked="1">
+                <div class="item" bis_skin_checked="1">
+                  <!-- <a href="/mission-vision-staff" title="Advantages" class="img" bis_skin_checked="1"> -->
+                  <img src="/image/advanteg2.jpg" alt="Advantages" />
+                  <div class="text" bis_skin_checked="1">
+                    <h3>
+                      <a href="/mission-vision-staff" title="Advantages" bis_skin_checked="1">Advantages</a>
+                    </h3>
+                    <div class="paragraph" bis_skin_checked="1">
+                      <p>
+                        We specialize in producing high quality tapioca
+                        starch, which meets food safety standards in the
+                        Vietnamese and international markets and has been
+                        tested and certified by SGS.
+                      </p>
+
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="owl-item active" style="width: 319px; margin-right: 136.5px" bis_skin_checked="1">
+                <div class="item" bis_skin_checked="1">
+                  <!-- <a href="/mission-vision-staff" title="Mission" class="img" bis_skin_checked="1"> -->
+
+                  <img src="/image/miss2.jpg" height="254px" alt="Mission" />
+
+                  <div class="text" bis_skin_checked="1">
+                    <div class="overplay">
+                      <h3>
+                        <a href="/mission-vision-staff" title="Mission" bis_skin_checked="1">Mission</a>
+                      </h3>
+                      <div class="paragraph" bis_skin_checked="1">
+                        <p>
+                          Quality and Safety are the first priorities. BACO
+                          always take care of the first steps from the farm to
+                          the processing to make sure well the quality
+                          control, food safety, delivery time and supplying
+                          capacity.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+
+  <div class="container">
+    <div class="nd5">
+      <h1 style="color: green">our product</h1>
+      <p>
+        We produce mainly Cassia Cinnamon, Star Anise, Ginger, Seedlesslime.
+        On other hand, BACO is also the reliable supplier of Pepper, Coffee,
+        Desiccated Coconut, Cashew nuts...
+      </p>
+      <br />
+
+      <button class="view">
+        View all products <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+    <br />
+
+    <script>
+      $(document).ready(function () {
+        $(".slide3").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplaySpeed: 1500,
+          autoplayHoverPause: true,
+          navigation: false,
+          center: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+    <div class="container-slide3">
+      <div class="slide3 owl-carousel">
+        <div class="active">
+          <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+        </div>
+
+        <div class="active">
+          <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+        </div>
+
+        <div class="active">
+          <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+        </div>
+
+        <div class="active">
+          <img src="image/coffee-bean.webp" width="400px" height="200px" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".brand-slide").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplaySpeed: 1500,
+        autoplayHoverPause: true,
+        center: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 5,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    });
+  </script>
+
+  <div class="brand-index">
+    <div class="container">
+      <div class="brand-slide owl-carousel">
+        <div class="item">
+          <img src="image/snapedit_1721705982678.jpeg" width="20px" height="150px" alt="" />
+        </div>
+
+        <div class="item">
+          <img src="image/brand2.jpeg" width="20px" height="150px" alt="" />
+        </div>
+
+        <div class="item">
+          <img src="image/brand3.jpeg" width="20px" height="150px" alt="" />
+        </div>
+
+        <div class="item">
+          <img src="image/brand4-Photoroom.jpg" width="20px" height="150px" alt="" />
+        </div>
+
+        <div class="item">
+          <img src="image/brand5-Photoroom.jpg" width="20px" height="150px" alt="" />
+        </div>
+
+        <div class="item">
+          <img src="image/brand6-Photoroom.jpg" width="20px" height="150px" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED PRODUCTS -->
+  <br /><br />
+
+  <script>
+    $(document).ready(function () {
+      $(".slide-content").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        navigation: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1500,
+        autoplayHoverPause: true,
+        center: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 5,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    });
+  </script>
+  <div class="container">
+    <div class="slide-content1">
+      <h1 style="color: green">FEATURED PRODUCTS</h1>
+      <br />
+      <div class="slide-content owl-carousel">
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp1.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp2.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp3.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp4.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp5.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp6.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp7.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp8.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp9.jpg" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp10.webp" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp11.webp" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp12.webp" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="item">
+          <div class="sp1">
+            <div class="img-container">
+              <img src="image/sp13.webp" width="398px" height="396px" />
+            </div>
+
+            <div class="text">
+              <h3>WASHED ARABICA S16,18</h3>
+            </div>
+            <div class="price">
+              <p>3,550$ <i class="bi bi-bag"></i></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <!-- NEW&EVENT -->
+  <div class="container">
+    <div class="menu">
+      <div class="text">
+        <h1 style="color: green">NEWS & EVENTS</h1>
+      </div>
+
+      <button class="view">
+        View More <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="list-new">
+      <div class="item1">
+        <div class="time">
+          <div class="icon">
+            <i class="bi bi-clock-history"></i>
+          </div>
+
+          <div class="date">
+            <p>Jul 08,2024</p>
+          </div>
+        </div>
+        <h3>BULLETIN BOARD (REFERENCE) OF CASSAVA MARKET ON JULY 8, 2024</h3>
+        <div class="circle">
+          <i class="bi bi-arrow-down-right"></i>
+        </div>
+      </div>
+
+      <div class="item1">
+        <div class="time">
+          <div class="icon">
+            <i class="bi bi-clock-history"></i>
+          </div>
+
+          <div class="date">
+            <p>Jul 08,2024</p>
+          </div>
+        </div>
+        <h3>BULLETIN BOARD (REFERENCE) OF CASSAVA MARKET ON JULY 8, 2024</h3>
+        <div class="circle">
+          <i class="bi bi-arrow-down-right"></i>
+        </div>
+      </div>
+
+      <div class="item1">
+        <div class="time">
+          <div class="icon">
+            <i class="bi bi-clock-history"></i>
+          </div>
+
+          <div class="date">
+            <p>Jul 08,2024</p>
+          </div>
+        </div>
+        <h3>BULLETIN BOARD (REFERENCE) OF CASSAVA MARKET ON JULY 8, 2024</h3>
+        <div class="circle">
+          <i class="bi bi-arrow-down-right"></i>
+        </div>
+      </div>
+
+      <div class="item1">
+        <div class="time">
+          <div class="icon">
+            <i class="bi bi-clock-history"></i>
+          </div>
+
+          <div class="date">
+            <p>Jul 08,2024</p>
+          </div>
+        </div>
+        <h3>BULLETIN BOARD (REFERENCE) OF CASSAVA MARKET ON JULY 8, 2024</h3>
+
+        <div class="circle">
+          <div class="overplay"><i class="bi bi-arrow-down-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <!-- LOREM -->
+
+  <div class="container">
+    <div class="bottom">
+      <div class="left1">
+        <div class="anh">
+          <img src="image/factory-index-icon.webp" alt="" />
+        </div>
+        <div class="name">
+          <h3>
+            LOREM IPSUM IS SIMPLY DUMY TEXT OF THE PRINTING AND TYPESETTING
+          </h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages
+          </p>
+        </div>
+
+        <div class="name2">
+          <p>
+            <b>Phạm Thị Bảo Anh</b>
+          </p>
+          <p>Chủ Tịch Baco</p>
+        </div>
+      </div>
+
+      <div class="right1">
+        <img src="image/anhchutich.webp" alt="Phạm Thị Bảo Anh" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 style="color: green">PRESS TALK ABOUT US</h1>
+    <div class="content3">
+      <div class="item2">
+        <div class="image-3">
+          <img src="image/press-talk-about-us.webp" alt="" />
+        </div>
+      </div>
+
+
+      <div class="text">
+        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting press talk 2</h2>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- FOOTER -->
+
+  <div class="ft-top">
+    <div class="container">
+      <div class="logo">
+        <img src="/image/logo.webp" alt="">
+      </div>
+
+
+      <div class="text">
+        <h1>Baco Viet Nam</h1>
+        <div class="nd1">
+          <p>Reliable Manufacturer and Exporter of Spices, Food and Agricultural Products</p>
+        </div>
+      </div>
+
+
+      <div class="social">
+        <a href="https://www.facebook.com/" title="Facebook" rel="nofollow">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://twitter.com/" title="twitter" rel="nofollow">
+          <i class="bi bi-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/" title="instagram" rel="nofollow">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.youtube.com/" title="youtube" rel="nofollow">
+          <i class="bi bi-youtube"></i>
+        </a>
+
+
+
+        <a href="https://www.tiktok.com/" title="tiktok" rel="nofollow">
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  <div class="ft-mid">
+    <div class="container">
+      <div class="item">
+        <div class="title">
+          <p>Office:</p>
+        </div>
+        <p>Sun Building HDI Tay Ho. 158 Vo Chi Cong Str.. Tay Ho Dist., Hanoi, Vietnam</p>
+        <br><br>
+       <div class="title">
+        <p>FACTORY:</p>
+       </div>
+        <p>K8 Hamlet, Ban Phiet Commune, Bao Thang Dist., Lao Cai City. Lao Cai Province</p>
+      </div>
+       
+    
+
+      <div class="item">
+        <div class="title">
+          <p>CONTACT:</p>
+        </div>
+        <p>Hotline:+84 981 356252/+84 981 999008 Whatsapp</p>
+        <p>Email: baoying.ceo@bacovietnam.com</p>
+        <p>Website: Bacovietnam.com.vn</p>
+      </div>
+
+      <div class="item">
+        <div class="title">
+          <p>MENU</p>
+        </div>
+        <p>About us</p>
+        <p>Products</p>
+        <p>News & Events</p>
+        <p>Contact us</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="ft-footer">
+    <p style="color: rgb(227, 234, 228);">© 2023 BACO VIETNAM CO.,LTD. All Rights Reserved.</p>
+  </div>
+
+</body>
+
+</html>
